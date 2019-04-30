@@ -1,7 +1,7 @@
 <?php
 class DBconnector{
 	public $host = 'localhost';
-	public $dbname = 'newsdb';
+	public $dbname = 'product';
 	public $un = 'root';
 	public $pw = '';	
 	public function runquery($sql)
