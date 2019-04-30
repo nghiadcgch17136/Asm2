@@ -3,9 +3,9 @@
 <head>
 	<title>ATN shop</title>
 </head>
-<body>
+<body style="background-color: yellow">
 	<div>
-		<h1>ship</h1>
+		<h1>sh</h1>
 	</div>
 </body>
 </html>
