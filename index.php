@@ -25,7 +25,7 @@ $stmt->execute();
 $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
 	?>
-	<div><img src="$row['image']"></div>
+	<div><img src="/<?php echo $row['image']; ?>"></div>
 	<?php 
 
 }
