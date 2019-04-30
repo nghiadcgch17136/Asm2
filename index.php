@@ -27,7 +27,7 @@ foreach ($resultSet as $row) {
 	?>
 	<div><img src="/<?php echo $row['image']; ?>"></div>
 	<?php 
-	echo $row['productName'];
+	echo $row['productname'];
 }
 ?>
 	</div>
