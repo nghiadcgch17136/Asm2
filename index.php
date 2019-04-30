@@ -28,6 +28,8 @@ foreach ($resultSet as $row) {
 	<div><img src="/<?php echo $row['image']; ?>"></div>
 	<?php 
 	echo $row['productname'];
+	echo $row['productdescription'];
+	echo $row['price'];
 }
 ?>
 	</div>
