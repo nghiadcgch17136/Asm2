@@ -18,8 +18,8 @@
 				<div>
 					<a><img src="<?=$rows[$i]['image']?>" alt=""></a>
 				</div>
-				<div ><?=$rows[$i]['productname']?></div>
-				<div><?=$rows[$i]['productdescription']?></div>
+				<div ><?=$rows[$i]['productName']?></div>
+				<div><?=$rows[$i]['productDescription']?></div>
 				<div><?=$rows[$i]['price']?></div>
 			
 			</div>
