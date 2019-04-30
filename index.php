@@ -22,7 +22,10 @@ $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
-	echo $row['image'];
+	?>
+	<div><img src="$row['image']"></div>
+	<?php 
+
 }
 ?>
 	</div>
