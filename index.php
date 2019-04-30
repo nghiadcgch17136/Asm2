@@ -8,14 +8,14 @@
 		<?php
 		require_once('./dbconnector.php');
 		$conn = new DBconnector();
-		$sql = "select * from product where productid = 1";
+		$sql = "select * from product";
 		$rows = $conn -> runQuery($sql);
 		for ($i=0; $i < count($rows); $i++) { 
 			?>
 			
-			<div class="item">
+			<div>
 
-				<div class="iimage">
+				<div>
 					<a><img src="<?=$rows[$i]['image']?>" alt=""></a>
 				</div>
 				<div ><?=$rows[$i]['productname']?></div>
