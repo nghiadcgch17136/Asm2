@@ -5,27 +5,26 @@
 </head>
 <body>
 	<div>
-		<?php
-		require_once('./dbconnector.php');
-		$conn = new DBconnector();
-		$sql = "select * from product";
-		$rows = $conn -> runQuery($sql);
-		for ($i=0; $i < count($rows); $i++) { 
-			?>
-			
-			<div>
-
-				<div>
-					<a><img src="<?=$rows[$i]['image']?>" alt=""></a>
-				</div>
-				<div ><?=$rows[$i]['productName']?></div>
-				<div><?=$rows[$i]['productDescription']?></div>
-				<div><?=$rows[$i]['price']?></div>
-			
-			</div>
-			<?php
-		}
-		?>
+		<?php 
+$sql = "SELECT * FROM product";
+$db = parse_url(getenv("DATABASE_URL"));
+$pdo = new PDO("pgsql:" . sprintf(
+    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
+    $db["host"],
+    $db["port"],
+    $db["user"],
+    $db["pass"],
+    ltrim($db["path"], "/")
+));
+$stmt = $pdo->prepare($sql);
+//Thiết lập kiểu dữ liệu trả về
+$stmt->setFetchMode(PDO::FETCH_ASSOC);
+$stmt->execute();
+$resultSet = $stmt->fetchAll();
+foreach ($resultSet as $row) {
+	echo $row['image'];
+}
+?>
 	</div>
 </body>
 </html>
