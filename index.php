@@ -16,6 +16,11 @@
 		#table th{
 			font-size: 34px;
 		}
+		#table img{
+			position: relative;
+			left: 50px;
+		}
+
 	</style>
 	<title>ATN shop</title>
 	<table></table>
@@ -50,13 +55,12 @@ $resultSet = $stmt->fetchAll();
 	echo "</tr>";
 foreach ($resultSet as $row) {
 	echo "<tr>";
-	echo "<td>";?><div class="image"><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
+	echo "<td>";?><div><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
 	echo "<td>" . $row['productname'] . "</td>";
 	echo "<td>" . $row['productdescription'] . "</td>";
 	echo "<td>" . $row['price'] . "</td>";
 	echo "<td>" . $row['quantity'] . "</td>"; 
 	echo "</tr>";
-	
 }
 	echo "</table>";
 ?>
