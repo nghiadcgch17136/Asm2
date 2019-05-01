@@ -2,9 +2,13 @@
 <html>
 <head>
 	<style>
-		#table{
+		table{
+			border-collapse: collapse;	
+		}
+		table, td ,th{
 			border: 1px solid black;
-			border-collapse: collapse;
+		}
+		#table{
 			margin: auto;
 			width: 65%;
 			padding: 100px;
