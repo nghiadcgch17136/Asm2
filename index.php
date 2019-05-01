@@ -18,11 +18,12 @@
 		}
 		#table img{
 			position: relative;
-			left: 50px;
+			left: 40px;
 			height: 130px;
 		}
 		#table td{
 			font-size: 20px;
+			text-align : center;
 		}
 
 	</style>
