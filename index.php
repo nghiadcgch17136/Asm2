@@ -28,8 +28,9 @@ foreach ($resultSet as $row) {
 	<div><img src="/<?php echo $row['image']; ?>"></div>
 	<?php 
 	echo "<h1>" . $row['productname'] . "</h1>";
-	echo $row['productdescription'];
-	echo $row['price'];
+	echo "div" . $row['productdescription'] . "/<div>";
+	echo "div" . $row['price'] . "/<div>";
+	echo "div" . $row['quantity'] . "/<div>";
 }
 ?>
 	</div>
