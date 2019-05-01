@@ -33,7 +33,7 @@ $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
 
 	
-	echo "<table align='center'>";
+	echo "<table>";
 	echo  "<tr>";
 	echo "<th>Image</th>";
 	echo "<th>Product name</th>";
