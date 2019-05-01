@@ -29,7 +29,7 @@ $stmt = $pdo->prepare($sql);
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
-echo "<table id = 'table'>";
+	echo "<table id = 'table'>";
 	echo  "<tr>";
 	echo "<th>Image</th>";
 	echo "<th>Product name</th>";
