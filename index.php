@@ -36,15 +36,13 @@ foreach ($resultSet as $row) {
 	echo "<th>Product Description</th>";
 	echo "<th>Price</th>";
 	echo "<th>Quantity</th>";
-	while ($row = mysql_fetch_assoc($result)) {echo "<tr>";
-	
-		echo "<td>";?><div><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
-		echo "<td>" . $row['productname'] . "<td>";
-		echo "<td>" . $row['productdescription'] . "</td>";
-		echo "<td>" . $row['price'] . "</td>";
-		echo "<td>" . $row['quantity'] . "</td>"; 
-		echo "</tr>";
-	}
+	echo "<tr>";
+	echo "<td>";?><div><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
+	echo "<td>" . $row['productname'] . "<td>";
+	echo "<td>" . $row['productdescription'] . "</td>";
+	echo "<td>" . $row['price'] . "</td>";
+	echo "<td>" . $row['quantity'] . "</td>"; 
+	echo "</tr>";
 	echo "</table>";
 }
 ?>
