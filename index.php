@@ -2,7 +2,7 @@
 <html>
 <head>
 	<style>
-		table,th,td{
+		#table{
 			border: 1px solid black;
 			border-collapse: collapse;
 			margin: auto;
@@ -34,7 +34,7 @@ $stmt = $pdo->prepare($sql);
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
-	echo "<table";
+	echo "<table id = 'table'>";
 	echo  "<tr>";
 	echo "<th>Image</th>";
 	echo "<th>Product name</th>";
@@ -44,7 +44,7 @@ $resultSet = $stmt->fetchAll();
 	echo "</tr>";
 foreach ($resultSet as $row) {
 	echo "<tr>";
-	echo "<td>";?><div class="image"><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
+	
 	echo "<td>" . $row['productname'] . "</td>";
 	echo "<td>" . $row['productdescription'] . "</td>";
 	echo "<td>" . $row['price'] . "</td>";
