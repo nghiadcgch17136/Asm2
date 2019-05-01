@@ -31,7 +31,8 @@ foreach ($resultSet as $row) {
 	echo "<h1>" . $row['productname'] . "</h1>";
 	echo "<div>" . $row['productdescription'] . "</div>";
 	echo "<div>" . $row['price'] . "</div>";
-	echo "<div><p>Quantity: " . $row['quantity'] . "</p></div>";
+	?><div>Quantity: <?php echo $row['quantity']; ?></div><?php
+	
 }
 ?>
 	</div>
