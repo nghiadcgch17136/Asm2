@@ -3,7 +3,7 @@
 <head>
 	<style>
 		.table{
-			border-style: solid;
+			border: 1px solid black;
 		}
 	</style>
 	<title>ATN shop</title>
