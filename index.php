@@ -7,6 +7,7 @@
 			border-collapse: collapse;
 			margin: auto;
 			width: 65%;
+			padding: 100px;
 		}
 
 	</style>
