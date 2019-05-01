@@ -4,7 +4,11 @@
 	<style>
 		#table{
 			border: 1px solid black;
-
+			margin: auto;
+		}
+		.image{
+			width: 100%;
+			height: 200px;
 		}
 	</style>
 	<title>ATN shop</title>
@@ -42,7 +46,7 @@ foreach ($resultSet as $row) {
 	echo "<th>Quantity</th>";
 	echo "</tr>";
 	echo "<tr>";
-	echo "<td>";?><div><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
+	echo "<td>";?><div class="image"><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
 	echo "<td>" . $row['productname'] . "</td>";
 	echo "<td>" . $row['productdescription'] . "</td>";
 	echo "<td>" . $row['price'] . "</td>";
