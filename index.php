@@ -4,9 +4,13 @@
 	<style>
 		#table{
 			border: 1px solid black;
+			border-collapse: collapse;
 			margin: auto;
 		}
-		
+		.image{
+			width: 80px;
+			height: 150px;
+		}
 	</style>
 	<title>ATN shop</title>
 	<table></table>
