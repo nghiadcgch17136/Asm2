@@ -3,7 +3,7 @@
 <head>
 	
 	<title>ATN shop</title>
-
+	<table></table>
 </head>
 <body>
 	<div>
@@ -20,6 +20,7 @@ $pdo = new PDO("pgsql:" . sprintf(
     $db["pass"],
     ltrim($db["path"], "/")
 ));
+$result = pg_query($pdo,$sql);
 $stmt = $pdo->prepare($sql);
 //Thiết lập kiểu dữ liệu trả về
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -28,14 +29,14 @@ $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
 
 	
-	echo "<table align='center'>";
+	echo "<table align='center';border = '1px solid black';border-collapse: 'collapse'>";
 	echo  "<tr>";
 	echo "<th>Image</th>";
 	echo "<th>Product name</th>";
 	echo "<th>Product Description</th>";
 	echo "<th>Price</th>";
 	echo "<th>Quantity</th>";
-	while ($row > 0) {echo "<tr>";
+	while ($row = mysql_fetch_assoc($result)) {echo "<tr>";
 	
 		echo "<td>";?><div><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
 		echo "<td>" . $row['productname'] . "<td>";
