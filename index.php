@@ -29,7 +29,7 @@ $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
 
 	
-	echo "<table align='center';border = '1px solid black';border-collapse: 'collapse'>";
+	echo "<table align='center';border = '1px solid black';>";
 	echo  "<tr>";
 	echo "<th>Image</th>";
 	echo "<th>Product name</th>";
