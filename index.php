@@ -25,9 +25,6 @@ $stmt = $pdo->prepare($sql);
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
-foreach ($resultSet as $row) {
-
-	
 	echo "<table align='center'>";
 	echo  "<tr>";
 	echo "<th>Image</th>";
@@ -35,17 +32,15 @@ foreach ($resultSet as $row) {
 	echo "<th>Product Description</th>";
 	echo "<th>Price</th>";
 	echo "<th>Quantity</th>";
-	while ($row <= count($row)) {echo "<tr>";
-	
-		echo "<td>";?><div><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
-		echo "<td>" . $row['productname'] . "<td>";
-		echo "<td>" . $row['productdescription'] . "</td>";
-		echo "<td>" . $row['price'] . "</td>";
-		echo "<td>" . $row['quantity'] . "</td>"; 
-	}
-	
-	
+for ($i=0; $i < count($row); $i++) {echo "<tr>"
+		echo "<td>";?><div><img src="/<?php echo $row[$i]['image']; ?>"></div><?php "</td>";
+		echo "<td>" . $row[$i]['productname'] . "<td>";
+		echo "<td>" . $row[$i]['productdescription'] . "</td>";
+		echo "<td>" . $row[$i]['price'] . "</td>";
+		echo "<td>" . $row[$i]['quantity'] . "</td>"; 
+		echo "</tr>";
 }
+	echo "</table>";
 ?>
 	</div>
 </body>
