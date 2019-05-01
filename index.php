@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>ATN shop</title>
+
 </head>
 <body>
 	<div>
@@ -30,7 +31,7 @@ foreach ($resultSet as $row) {
 	echo "<h1>" . $row['productname'] . "</h1>";
 	echo "<div>" . $row['productdescription'] . "</div>";
 	echo "<div>" . $row['price'] . "</div>";
-	echo "<div>" . $row['quantity'] . "</div>";
+	echo "<div><p>Quantity: " . $row['quantity'] . "</p></div>";
 }
 ?>
 	</div>
