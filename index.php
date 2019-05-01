@@ -10,7 +10,7 @@
 			padding: 100px;
 		}
 		#table th{
-			
+			font-size: 30px;
 		}
 	</style>
 	<title>ATN shop</title>
