@@ -19,7 +19,10 @@
 		#table img{
 			position: relative;
 			left: 50px;
-			height: 80px;
+			height: 130px;
+		}
+		#table td{
+			font-size: 20px;
 		}
 
 	</style>
