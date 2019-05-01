@@ -2,7 +2,7 @@
 <html>
 <head>
 	<style>
-		#table{
+		table,th,td{
 			border: 1px solid black;
 			border-collapse: collapse;
 			margin: auto;
@@ -34,7 +34,7 @@ $stmt = $pdo->prepare($sql);
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
-	echo "<table id = 'table'>";
+	echo "<table";
 	echo  "<tr>";
 	echo "<th>Image</th>";
 	echo "<th>Product name</th>";
