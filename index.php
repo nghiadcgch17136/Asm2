@@ -6,6 +6,7 @@
 			border: 1px solid black;
 			border-collapse: collapse;
 			margin: auto;
+			width: 65%;
 		}
 
 	</style>
