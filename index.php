@@ -4,6 +4,7 @@
 	<style>
 		.table{
 			border: 1px solid black;
+			
 		}
 	</style>
 	<title>ATN shop</title>
@@ -24,7 +25,6 @@ $pdo = new PDO("pgsql:" . sprintf(
     $db["pass"],
     ltrim($db["path"], "/")
 ));
-$result = pg_query($pdo,$sql);
 $stmt = $pdo->prepare($sql);
 //Thiết lập kiểu dữ liệu trả về
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -33,7 +33,7 @@ $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
 
 	
-	echo "<table>";
+	echo "<table class = 'table'>";
 	echo  "<tr>";
 	echo "<th>Image</th>";
 	echo "<th>Product name</th>";
