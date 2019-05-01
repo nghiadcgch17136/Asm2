@@ -43,7 +43,7 @@ foreach ($resultSet as $row) {
 	echo "</tr>";
 	echo "<tr>";
 	echo "<td>";?><div><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
-	echo "<td>" . $row['productname'] . "<td>";
+	echo "<td>" . $row['productname'] . "</td>";
 	echo "<td>" . $row['productdescription'] . "</td>";
 	echo "<td>" . $row['price'] . "</td>";
 	echo "<td>" . $row['quantity'] . "</td>"; 
