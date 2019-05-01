@@ -8,7 +8,7 @@
 		}
 		.image{
 			width: 100%;
-			height: 200px;
+			height: 150px;
 		}
 	</style>
 	<title>ATN shop</title>
@@ -34,9 +34,6 @@ $stmt = $pdo->prepare($sql);
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
-foreach ($resultSet as $row) {
-
-	
 	echo "<table id = 'table'>";
 	echo  "<tr>";
 	echo "<th>Image</th>";
@@ -45,6 +42,7 @@ foreach ($resultSet as $row) {
 	echo "<th>Price</th>";
 	echo "<th>Quantity</th>";
 	echo "</tr>";
+foreach ($resultSet as $row) {
 	echo "<tr>";
 	echo "<td>";?><div class="image"><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
 	echo "<td>" . $row['productname'] . "</td>";
