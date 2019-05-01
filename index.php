@@ -17,8 +17,6 @@
 			font-size: 34px;
 		}
 		#table img{
-			position: relative;
-			left: 40px;
 			height: 130px;
 		}
 		#table td{
