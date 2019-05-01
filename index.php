@@ -5,6 +5,7 @@
 		#table{
 			border: 1px solid black;
 			border-collapse: collapse;
+			text-align: center;
 			margin: auto;
 			width: 65%;
 			padding: 100px;
