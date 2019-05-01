@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+	<style>
+		.table{
+			border-style: solid;
+		}
+	</style>
 	<title>ATN shop</title>
 	<table></table>
 </head>
@@ -29,7 +33,7 @@ $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
 
 	
-	echo "<table align='center';border = '1px solid black';>";
+	echo "<table align='center'>";
 	echo  "<tr>";
 	echo "<th>Image</th>";
 	echo "<th>Product name</th>";
