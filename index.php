@@ -7,7 +7,7 @@
 			margin: auto;
 		}
 		.image{
-			width: 100%;
+			width: 80px;
 			height: 150px;
 		}
 	</style>
