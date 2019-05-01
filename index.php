@@ -47,8 +47,9 @@ foreach ($resultSet as $row) {
 	echo "<td>" . $row['price'] . "</td>";
 	echo "<td>" . $row['quantity'] . "</td>"; 
 	echo "</tr>";
-	echo "</table>";
+	
 }
+	echo "</table>";
 ?>
 	</div>
 </body>
