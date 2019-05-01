@@ -9,7 +9,9 @@
 			width: 65%;
 			padding: 100px;
 		}
-
+		#table th{
+			
+		}
 	</style>
 	<title>ATN shop</title>
 	<table></table>
@@ -44,7 +46,7 @@ $resultSet = $stmt->fetchAll();
 	echo "</tr>";
 foreach ($resultSet as $row) {
 	echo "<tr>";
-	
+	echo "<td>";?><div class="image"><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
 	echo "<td>" . $row['productname'] . "</td>";
 	echo "<td>" . $row['productdescription'] . "</td>";
 	echo "<td>" . $row['price'] . "</td>";
