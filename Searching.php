@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style>
-		.searchbar{
-			float: right;
-			padding : 25px 5px 0px 0px;
-
-		}
-	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>ATN shop</title>
 	
 </head>
