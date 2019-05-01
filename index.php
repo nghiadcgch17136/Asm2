@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	.
 	<title>ATN shop</title>
 
 </head>
 <body>
-	<div>
+	<div style="margin: auto">
 		<?php 
 $sql = "SELECT * FROM product";
 $db = parse_url(getenv("DATABASE_URL"));
@@ -25,6 +26,7 @@ $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
+
 	?>
 	<div><img src="/<?php echo $row['image']; ?>"></div>
 	<?php 
