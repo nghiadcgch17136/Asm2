@@ -2,9 +2,9 @@
 <html>
 <head>
 	<style>
-		.table{
+		#table{
 			border: 1px solid black;
-			
+
 		}
 	</style>
 	<title>ATN shop</title>
@@ -33,7 +33,7 @@ $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
 
 	
-	echo "<table class = 'table'>";
+	echo "<table id = 'table'>";
 	echo  "<tr>";
 	echo "<th>Image</th>";
 	echo "<th>Product name</th>";
