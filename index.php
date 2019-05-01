@@ -19,6 +19,7 @@
 		#table img{
 			position: relative;
 			left: 50px;
+			height: 80px;
 		}
 
 	</style>
