@@ -26,7 +26,7 @@
 		}
 		.button img{
 			width: 30px;
-			height: 50px;
+			height: 30px;
 		}
 	</style>
 	
