@@ -90,8 +90,8 @@ foreach ($resultSet as $row) {
 	echo "<td>" . $row['productdescription'] . "</td>";
 	echo "<td>" . $row['price'] . "</td>";
 	echo "<td>" . $row['quantity'] . "</td>"; 
-	?><form action="" method="POST">
-					<button class="function" onclick="return Deleteqry(<?php echo $row['productid'] ?>)"><img src="img/rubbish-bin-delete-button.png" alt=""></button></form><?php
+	?><td><form action="" method="POST">
+					<button class="function" onclick="return Deleteqry(<?php echo $row['productid'] ?>)"><img src="img/rubbish-bin-delete-button.png" alt=""></button></form></td><?php
 	echo "</tr>";
 }
 	echo "</table>";
