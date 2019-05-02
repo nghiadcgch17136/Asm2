@@ -17,14 +17,14 @@
 		#table th{
 			font-size: 34px;
 		}
-		#table img{
-			height: 130px;
+		.button img{
+			height: 30px;
+			width: 30px;
 		}
 		#table td{
 			font-size: 20px;
 			text-align : center;
 		}
-
 	</style>
 	<title>ATN shop</title>
 </head>
@@ -64,7 +64,7 @@ $resultSet = $stmt->fetchAll();
 	echo "</tr>";
 foreach ($resultSet as $row) {
 	echo "<tr>";
-	echo "<td>";?><div><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
+	echo "<td>";?><div><img width="130px" height="130px" src="/<?php echo $row['image']; ?>"></div><?php "</td>";
 	echo "<td>" . $row['productname'] . "</td>";
 	echo "<td>" . $row['productdescription'] . "</td>";
 	echo "<td>" . $row['price'] . "</td>";
