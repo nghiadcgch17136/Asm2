@@ -17,7 +17,10 @@
 		#table th{
 			font-size: 34px;
 		}
-		
+		.button img{
+			width: 30px;
+			height: 30px;
+		}
 		#table td{
 			font-size: 20px;
 			text-align : center;
