@@ -20,6 +20,10 @@
 		#table img{
 			height: 130px;
 		}
+		#button img{
+			width: 30px;
+			height: 30px;
+		}		
 		#table td{
 			font-size: 20px;
 			text-align : center;
@@ -85,7 +89,7 @@ $resultSet = $stmt->fetchAll();
 	echo "</tr>";
 foreach ($resultSet as $row) {
 	echo "<tr>";
-	echo "<td>";?><div id="img" ><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
+	echo "<td>";?><div><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
 	echo "<td>" . $row['productname'] . "</td>";
 	echo "<td>" . $row['productdescription'] . "</td>";
 	echo "<td>" . $row['price'] . "</td>";
