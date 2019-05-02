@@ -17,10 +17,14 @@
 		#table th{
 			font-size: 34px;
 		}
-		#table img{
-			height: 130px;
+		.img{
+			height: 50px;
+			width: 50px;
 		}
-		
+		.button img{
+			height: 30px;
+			width: 30px;
+		}
 		#table td{
 			font-size: 20px;
 			text-align : center;
@@ -86,13 +90,13 @@ $resultSet = $stmt->fetchAll();
 	echo "</tr>";
 foreach ($resultSet as $row) {
 	echo "<tr>";
-	echo "<td>";?><div><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
+	echo "<td>";?><div class="img"><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
 	echo "<td>" . $row['productname'] . "</td>";
 	echo "<td>" . $row['productdescription'] . "</td>";
 	echo "<td>" . $row['price'] . "</td>";
 	echo "<td>" . $row['quantity'] . "</td>"; 
 	?><td><form action="" method="POST">
-					<button onclick="return Deleteqry(<?php echo $row['productid'] ?>)"><img height="30px" width="30px" src="img/rubbish-bin-delete-button.png" alt=""></button></form></td><?php
+					<button class="button" onclick="return Deleteqry(<?php echo $row['productid'] ?>)"><img src="img/rubbish-bin-delete-button.png" alt=""></button></form></td><?php
 	echo "</tr>";
 }
 	echo "</table>";
