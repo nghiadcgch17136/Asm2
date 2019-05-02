@@ -17,7 +17,7 @@
 		#table th{
 			font-size: 34px;
 		}
-		#table img{
+		#table div{
 			height: 130px;
 		}
 		#button img{
