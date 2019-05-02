@@ -17,6 +17,10 @@
 		#table th{
 			font-size: 34px;
 		}
+		#img{
+			height: 100px;
+			width : 80px;
+		}
 		#table td{
 			font-size: 20px;
 			text-align : center;
@@ -86,7 +90,7 @@ $resultSet = $stmt->fetchAll();
 	echo "</tr>";
 foreach ($resultSet as $row) {
 	echo "<tr>";
-	echo "<td>";?><div><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
+	echo "<td>";?><div id="img" ><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
 	echo "<td>" . $row['productname'] . "</td>";
 	echo "<td>" . $row['productdescription'] . "</td>";
 	echo "<td>" . $row['price'] . "</td>";
