@@ -86,7 +86,7 @@ $resultSet = $stmt->fetchAll();
 	echo "</tr>";
 foreach ($resultSet as $row) {
 	echo "<tr>";
-	echo "<td>";?><div ><img width="80px" height="80px" src="/<?php echo $row['image']; ?>"></div><?php "</td>";
+	echo "<td>";?><div ><img width="130px" height="130px" src="/<?php echo $row['image']; ?>"></div><?php "</td>";
 	echo "<td>" . $row['productname'] . "</td>";
 	echo "<td>" . $row['productdescription'] . "</td>";
 	echo "<td>" . $row['price'] . "</td>";
