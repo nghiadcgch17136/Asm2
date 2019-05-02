@@ -18,8 +18,8 @@
 			font-size: 34px;
 		}
 		#img{
-			height: 100px;
-			width : 80px;
+			height: 50px;
+			width : 40px;
 		}
 		#table td{
 			font-size: 20px;
