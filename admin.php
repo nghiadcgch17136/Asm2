@@ -24,6 +24,10 @@
 			font-size: 20px;
 			text-align : center;
 		}
+		.button img{
+			width: 30px;
+			height: 50px;
+		}
 	</style>
 	
 	<script>
@@ -91,7 +95,7 @@ foreach ($resultSet as $row) {
 	echo "<td>" . $row['price'] . "</td>";
 	echo "<td>" . $row['quantity'] . "</td>"; 
 	?><td><form action="" method="POST">
-					<button class="function" onclick="return Deleteqry(<?php echo $row['productid'] ?>)"><img src="img/rubbish-bin-delete-button.png" alt=""></button></form></td><?php
+					<button class="button" onclick="return Deleteqry(<?php echo $row['productid'] ?>)"><img src="img/rubbish-bin-delete-button.png" alt=""></button></form></td><?php
 	echo "</tr>";
 }
 	echo "</table>";
