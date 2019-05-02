@@ -2,7 +2,30 @@
 <html>
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		table{
+			border-collapse: collapse;	
+		}
+		table, td ,th{
+			border: 1px solid black;
+		}
+		#table{
+			margin: auto;
+			width: 65%;
+			padding: 100px;
+		}
+		#table th{
+			font-size: 34px;
+		}
+		#table img{
+			height: 130px;
+		}
+		#table td{
+			font-size: 20px;
+			text-align : center;
+		}
+	</style>
+	
 	<script>
 		function Deleteqry(id)
         { 
