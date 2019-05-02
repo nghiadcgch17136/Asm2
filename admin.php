@@ -17,10 +17,6 @@
 		#table th{
 			font-size: 34px;
 		}
-		.img{
-			height: 50px;
-			width: 50px;
-		}
 		.button img{
 			height: 30px;
 			width: 30px;
@@ -90,7 +86,7 @@ $resultSet = $stmt->fetchAll();
 	echo "</tr>";
 foreach ($resultSet as $row) {
 	echo "<tr>";
-	echo "<td>";?><div class="img"><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
+	echo "<td>";?><div ><img width="50px" height="50px" src="/<?php echo $row['image']; ?>"></div><?php "</td>";
 	echo "<td>" . $row['productname'] . "</td>";
 	echo "<td>" . $row['productdescription'] . "</td>";
 	echo "<td>" . $row['price'] . "</td>";
