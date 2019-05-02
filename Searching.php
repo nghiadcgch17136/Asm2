@@ -17,12 +17,16 @@
 		#table th{
 			font-size: 34px;
 		}
-		#table img{
+		.img{
 			height: 130px;
 		}
 		#table td{
 			font-size: 20px;
 			text-align : center;
+		}
+		.button img{
+			width: 30px;
+			height: 30px;
 		}
 	</style>
 		

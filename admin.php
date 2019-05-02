@@ -17,9 +17,6 @@
 		#table th{
 			font-size: 34px;
 		}
-		#table img{
-			height: 130px;
-		}
 		#table td{
 			font-size: 20px;
 			text-align : center;

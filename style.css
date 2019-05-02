@@ -1,0 +1,26 @@
+
+		table{
+			border-collapse: collapse;	
+		}
+		table, td ,th{
+			border: 1px solid black;
+		}
+		#table{
+			margin: auto;
+			width: 65%;
+			padding: 100px;
+		}
+		#table th{
+			font-size: 34px;
+		}
+		.img{
+			height: 130px;
+		}
+		#table td{
+			font-size: 20px;
+			text-align : center;
+		}
+		.button img{
+			width: 30px;
+			height: 30px;
+		}
