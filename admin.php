@@ -18,7 +18,7 @@
 			font-size: 34px;
 		}
 		.img{
-			height: 130px;
+			height: 80px;
 		}
 		.button img{
 			width: 30px;
