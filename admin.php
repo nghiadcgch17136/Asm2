@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
-			table{
+		table{
 			border-collapse: collapse;	
 		}
 		table, td ,th{
@@ -17,12 +17,8 @@
 		#table th{
 			font-size: 34px;
 		}
-		.img{
-			height: 80px;
-		}
-		.button img{
-			width: 30px;
-			height: 30px;
+		#table img{
+			height: 130px;
 		}
 		#table td{
 			font-size: 20px;
