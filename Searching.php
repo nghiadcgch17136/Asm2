@@ -17,19 +17,27 @@
 		#table th{
 			font-size: 34px;
 		}
-		.img{
-			height: 130px;
+		.button img{
+			height: 30px;
+			width: 30px;
 		}
 		#table td{
 			font-size: 20px;
 			text-align : center;
 		}
-		.button img{
-			width: 30px;
-			height: 30px;
-		}
 	</style>
-		
+	<script>
+		function Deleteqry(id)
+        { 
+          if(confirm("Are you sure you want to delete this product?")==true)
+                   window.location="admin.php?del="+id;
+            return false;
+        }
+     	function edit(id) {
+     		window.location="Update.php?id="+id;
+         
+     	}   
+	</script>	
 	<title>ATN shop</title>
 </head>
 <body>
@@ -38,6 +46,15 @@
   			<button type="submit"><i class="fa fa-search"></i></button>
 	</form>
 	<div>
+		<?php 
+		if (isset($_GET['del'])) {
+		$db = pg_connect("host=ec2-54-221-236-144.compute-1.amazonaws.com port=5432 user=tkxdkzzzureptd
+	 password=597dac569edc9b06099f1027652ff9aab479d2d6c501e71e1c31adc6bd6ed453 dbname=d621ll97foi9ku");
+		$sql = "DELETE FROM product WHERE productid=".$_GET['del'];
+		$result = pg_query($db,$sql);
+		
+		}
+	 ?>
 		<?php 
 $sql = "SELECT * FROM product where productName like '%".$_GET['search']."%'";
 $db = parse_url(getenv("DATABASE_URL"));
@@ -66,11 +83,17 @@ $resultSet = $stmt->fetchAll();
 	echo "</tr>";
 foreach ($resultSet as $row) {
 	echo "<tr>";
-	echo "<td>";?><div><img src="/<?php echo $row['image']; ?>"></div><?php "</td>";
+	echo "<td>";?><div ><img width="130px" height="130px" src="/<?php echo $row['image']; ?>"></div><?php "</td>";
 	echo "<td>" . $row['productname'] . "</td>";
 	echo "<td>" . $row['productdescription'] . "</td>";
 	echo "<td>" . $row['price'] . "</td>";
 	echo "<td>" . $row['quantity'] . "</td>"; 
+	?><td><form action="" method="POST">
+					<button class="button" onclick="return Deleteqry(<?php echo $row['productid'] ?>)"><img src="img/rubbish-bin-delete-button.png" alt=""></button>
+					<button class="button"><a href="Update.php?ProductID=<?=$rows[$i]['ProductID']?>" ><img src="img/edit.png"alt=""></a></button>
+		  </form>
+	   </td>
+	<?php
 	echo "</tr>";
 }
 	echo "</table>";
