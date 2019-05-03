@@ -149,7 +149,7 @@ span.psw {
 	<title>ATN shop</title>
 </head>
 <body>
-	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+	<button onclick="document.getElementById('id01').style.display='block'" style="float: left;">Login</button>
 
 <div id="id01" class="modal">
   
