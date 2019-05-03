@@ -12,11 +12,11 @@
 		$count = pg_num_rows($result)
 		if ($count == 1) {
 			# code...
-			header('Location:admin.php');
+			header("location:admin.php");
 		}
 		else {
 			# code...
-			header('Location:index.php');
+			header("location:index.php");
 		}
 	?>
 
