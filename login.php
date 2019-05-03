@@ -11,11 +11,11 @@
 		$result = pg_query($db,$sql);
 		if ($result == 1) {
 			# code...
-			header('location:admin.php');
+			header('Location:admin.php');
 		}
 		else {
 			# code...
-			header('location:index.php');
+			header('Location:index.php');
 		}
 	?>
 
