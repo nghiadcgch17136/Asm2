@@ -67,7 +67,7 @@
 		$Image = $_GET['image'];
 		$DescribeProducts = $_GET['productdescription'];
 		$Price = $_GET['price'];
-		$Quantity = $_GET['quantity']
+		$Quantity = $_GET['quantity'];
 		$sql = "UPDATE product SET productname='".$ProductName."',productdescription='".$DescribeProducts."',price= '".$Price."',quantity ='".$Quantity."', image='".$Image."' WHERE productid =" .$_GET['productid'];
 		$result = pg_query($db,$sql);
 		
