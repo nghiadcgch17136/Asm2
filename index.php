@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<style>
 		table{
 			border-collapse: collapse;	
@@ -135,7 +135,7 @@ a, a:visited, a:active{
 	<title>ATN shop</title>
 </head>
 <body>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
 	<div>
 		<a class="login-window button" href="#login-box">Đăng nhập</a>
 	</div>
@@ -150,9 +150,8 @@ a, a:visited, a:active{
  <span>Mật khẩu</span>
  <input id="password" type="password" name="password" placeholder="Password" value="" />
  </label>
- <button class="button submit-button" type="button">Đăng nhập</button>
+ <form action="login.php"><button class="button submit-button" type="button">Đăng nhập</button></form>
  
- <a class="forgot" href="#">Quên mật khẩu?</a></form></div>
  <script>
  	$(document).ready(function() {
     $('a.login-window').click(function() {
