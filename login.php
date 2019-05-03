@@ -116,19 +116,17 @@ a, a:visited, a:active{
 <body>
 	<a class="login-window button" href="#login-box">Đăng nhập</a>
 	<div class="login" id="login-box">Đăng nhập
- 
- <a class="close" href="#"><img class="img-close" title="Close Window" alt="Close" src="close.png" /></a>
-<form class="login-content" action="#" method="post"><label class="username">
- <span>Tên hoặc email</span>
- <input id="username" type="text" autocomplete="on" name="username" placeholder="Username" value="" />
- </label>
- <label class="password">
- <span>Mật khẩu</span>
- <input id="password" type="password" name="password" placeholder="Password" value="" />
- </label>
- <button class="button submit-button" type="button">Đăng nhập</button>
- 
- <a class="forgot" href="#">Quên mật khẩu?</a></form></div>
+  	<a class="close" href="#"><img class="img-close" title="Close Window" alt="Close" src="close.png" /></a>
+	<form class="login-content" action="#" method="post"><label class="username">
+ 	<span>Tên hoặc email</span>
+ 	<input id="username" type="text" autocomplete="on" name="username" placeholder="Username" value="" />
+ 	</label>
+ 	<label class="password">
+ 	<span>Mật khẩu</span>
+ 	<input id="password" type="password" name="password" placeholder="Password" value="" />
+ 	</label>
+ 	<button class="button submit-button" type="button">Đăng nhập</button>
+ 	<a class="forgot" href="#">Quên mật khẩu?</a></form></div>
  <script>
  	$(document).ready(function() {
     $('a.login-window').click(function() {
@@ -153,6 +151,6 @@ a, a:visited, a:active{
       return false;
  });
 });
- </script>
+ 	</script>
 </body>
 </html>
