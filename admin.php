@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 		table{
@@ -94,7 +94,7 @@ foreach ($resultSet as $row) {
 	echo "<td>" . $row['quantity'] . "</td>"; 
 	?><td><form action="" method="POST">
 					<button class="button" onclick="return Deleteqry(<?php echo $row['productid'] ?>)"><img src="img/rubbish-bin-delete-button.png" alt=""></button>
-					<button class="button"><a href="Update.php?ProductID=<?=$rows[$i]['ProductID']?>" ><img src="img/edit.png"alt=""></a></button>
+					<button class="button"><a href="update.php?productid=<?=$rows['productid]']?>" ><img src="img/edit.png"alt=""></a></button>
 		  </form>
 	   </td>
 	<?php
