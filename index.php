@@ -31,9 +31,7 @@
 <body>
 	
 	<div>
-		<form action="login.php">
-			<button>Log in</button>
-		</form>
+		<a class="login-window button" href="#login-box">Đăng nhập</a>
 	</div>
 	<div>
 		<?php 
