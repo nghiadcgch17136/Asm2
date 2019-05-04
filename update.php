@@ -13,7 +13,7 @@
 
 		
 			
-		<form action="admin.php" method="POST"><table style="margin: auto;">
+		<form action="admin.php" method="GET"><table style="margin: auto;">
 		<tr>
 			
 			<td>ProductID: <?php echo $_GET['productid'] ?></td>
