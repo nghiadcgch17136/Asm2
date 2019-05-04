@@ -11,8 +11,6 @@
 		$sql = "SELECT * FROM products WHERE ProductID =".$_GET['productid'];
 		$result = pg_query($db,$sql);
 	?>
-	<?php while ($row = pg_fetch_assoc($result)) {
-		?>
 		<table style="margin: auto;">
 		<tr>
 			<td>ProductID:</td>
