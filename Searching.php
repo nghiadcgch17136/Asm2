@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 	<style>
 		.button1 {
   background-color: #4CAF50;
@@ -64,10 +64,7 @@
 	<form action="admin.php">
 		<button class="button1" style="width: auto;">Admin</button>
 	</form>
-	<form action="Searching.php" class="searchbar" method="GET">
-			<input type="text" placeholder="Search.." name="search" >
-  			<button type="submit"><i class="fa fa-search"></i></button>
-	</form>
+	
 	
 	<div>
 		<?php 
