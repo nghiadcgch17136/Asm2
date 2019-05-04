@@ -2,6 +2,19 @@
 <html>
 <head>
 	<style>
+		button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
 		body{
       background-image: url("img/9ae0e9838b0789e3b26d3be5d6c6e01f.jpg");
       
@@ -16,6 +29,9 @@
 	<title>ATN shop</title>
 </head>
 <body>
+	<form action="admin.php">
+		<button style="width: auto;">Admin</button>
+	</form>
 	<?php
 		$db = pg_connect("host=ec2-54-221-236-144.compute-1.amazonaws.com port=5432 user=tkxdkzzzureptd
 	 password=597dac569edc9b06099f1027652ff9aab479d2d6c501e71e1c31adc6bd6ed453 dbname=d621ll97foi9ku");
