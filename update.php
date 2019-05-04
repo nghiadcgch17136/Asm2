@@ -36,6 +36,7 @@
 			<td>Price:</td>
 			<td><input type="text" name="price" value="<?php echo $row['price'] ?>"></td>
 			</tr>
+		</table>
 		}
 	?>
 </body>
