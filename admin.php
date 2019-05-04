@@ -97,7 +97,8 @@ foreach ($resultSet as $row) {
 	?><td><form action="" method="GET">
 					<button class="button" onclick="return Deleteqry(<?php echo $row['productid'] ?>)"><img src="img/rubbish-bin-delete-button.png" alt=""></button>
 		  </form>
-		  <form action="update.php"><button class="button" onclick="return edit(<?php echo $row['productid'] ?>)"><img src="img/edit.png"alt=""></button></form>
+		  <form action="update.php"><button class="button" onclick="return edit(<?php echo $row['productid'] ?>)">
+		  	<a href="update.php?productid=<?php echo $row['productid'] ?>"></a><img src="img/edit.png"alt=""></button></form>
 	   </td>
 	<?php
 	echo "</tr>";
