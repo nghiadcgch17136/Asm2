@@ -50,14 +50,14 @@
 	<title>ATN shop</title>
 </head>
 <body>
-	<h1 style="text-align: center; font-size:30px;font-weight: bold;">ATN shop management</h1>
+	
 	<div>
 	<form action="Searching.php" class="searchbar" method="GET">
 			<input type="text" placeholder="Search.." name="search">
   			<button type="submit"><i class="fa fa-search"></i></button>
 	</form>
 	</div>
-	
+	<h1 style="text-align: center; font-size:30px;font-weight: bold;">ATN shop management</h1>
 	<div>
 		<?php 
 		if (isset($_GET['del'])) {
