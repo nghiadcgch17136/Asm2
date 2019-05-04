@@ -4,6 +4,10 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
+		body{
+      background-image: url("img/9ae0e9838b0789e3b26d3be5d6c6e01f.jpg");
+      
+    }
 		table{
 			border-collapse: collapse;	
 		}
@@ -12,7 +16,7 @@
 		}
 		#table{
 			margin: auto;
-			width: 65%;
+			width: 40%;
 			padding: 100px;
 		}
 		#table th{

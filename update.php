@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style>
+		body{
+      background-image: url("img/9ae0e9838b0789e3b26d3be5d6c6e01f.jpg");
+      
+    }
+    
+	</style>
 	<title>ATN shop</title>
 </head>
 <body>
