@@ -124,6 +124,7 @@ span.psw {
 }
     body{
       background-image: url("img/9ae0e9838b0789e3b26d3be5d6c6e01f.jpg")
+      background-repeat: no-repeat;
     }
 		table{
 			border-collapse: collapse;	
