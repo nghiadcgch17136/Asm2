@@ -97,7 +97,7 @@ foreach ($resultSet as $row) {
 	?><td><form action="" method="GET">
 					<button class="button" onclick="return Deleteqry(<?php echo $row['productid'] ?>)"><img src="img/rubbish-bin-delete-button.png" alt=""></button>
 		  </form>
-		  <form action="update.php" method="GET">
+		  <form action="update.php" method="POST">
 		  	<input type="hidden" name="productid" value="<?php echo $row['productid'] ?>">
 		  	<button class="button" type="submit">
 		  	<a href="update.php?productid=<?php echo $row['productid'] ?>"><img src="img/edit.png"alt=""></a></button>
