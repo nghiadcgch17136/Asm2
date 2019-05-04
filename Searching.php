@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
-		.button {
+		.button1 {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -13,7 +13,7 @@
   width: 100%;
 }
 
-.button:hover {
+.button1:hover {
   opacity: 0.8;
 }
 		body{
@@ -61,7 +61,7 @@
 </head>
 <body>
 	<form action="admin.php">
-		<button class="button" style="width: auto;">Admin</button>
+		<button class="button1" style="width: auto;">Admin</button>
 	</form>
 	<form action="Searching.php" class="searchbar" method="GET">
 			<input type="text" placeholder="Search.." name="search" >
@@ -112,12 +112,12 @@ foreach ($resultSet as $row) {
 	echo "<td>" . $row['price'] . "</td>";
 	echo "<td>" . $row['quantity'] . "</td>"; 
 	?><td><form action="" method="POST">
-					<button  onclick="return Deleteqry(<?php echo $row['productid'] ?>)"><img src="img/rubbish-bin-delete-button.png" alt=""></button>
+					<button class="button" onclick="return Deleteqry(<?php echo $row['productid'] ?>)"><img src="img/rubbish-bin-delete-button.png" alt=""></button>
 					
 		  </form>
 		  <form action="update.php" method="GET">
 		  	<input type="hidden" name="productid" value="<?php echo $row['productid'] ?>">
-		  	<button type="submit">
+		  	<button class="button" type="submit">
 		  	<a href="update.php?productid=<?php echo $row['productid'] ?>"><img src="img/edit.png"alt=""></a></button>
 		  </form>
 	   </td>
