@@ -16,7 +16,7 @@
 		<form action="admin.php" method="POST"><table style="margin: auto;">
 		<tr>
 			<td>ProductID:</td>
-			<td><?php echo $_GET['productid'] ?><input type="hidden" name="productid" value="<?php echo $_GET['productid'] ?>"></td>
+			<td><?php echo $_GET['id'] ?><input type="hidden" name="productid" value="<?php echo $_GET['productid'] ?>"></td>
 		</tr>
 		<tr>
 			<td>Product name:</td>
