@@ -3,6 +3,19 @@
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
+		button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
 		body{
       background-image: url("img/9ae0e9838b0789e3b26d3be5d6c6e01f.jpg");
       
@@ -47,6 +60,9 @@
 	<title>ATN shop</title>
 </head>
 <body>
+	<form action="admin.php">
+		<button style="width: auto;">Admin</button>
+	</form>
 	<form action="Searching.php" class="searchbar" method="GET">
 			<input type="text" placeholder="Search.." name="search" >
   			<button type="submit"><i class="fa fa-search"></i></button>
