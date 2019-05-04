@@ -153,8 +153,8 @@ span.psw {
 	<title>ATN shop</title>
 </head>
 <body>
-  <h1 style="font-size:30px; position: relative;left: 750px; font-weight: bold;">ATN shop management</h1>
-	<button onclick="document.getElementById('id01').style.display='block'" style="position: relative;top: 0px;">Login</button>
+  <h1 style="font-size:30px; position: relative;left: 790px; font-weight: bold;">ATN shop management</h1>
+	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;position: relative;top: 0px;">Login</button>
 
 <div id="id01" class="modal">
   
