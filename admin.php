@@ -109,7 +109,7 @@ foreach ($resultSet as $row) {
 	echo "<td>" . $row['quantity'] . "</td>"; 
 	?><td><form action="" method="GET">
 					<button class="button" onclick="return Deleteqry(<?php echo $row['productid'] ?>)"><img src="img/rubbish-bin-delete-button.png" alt=""></button>
-					<button class="button"><a href="https://nghiadc1308.herokuapp.com/index.php" ><img src="img/edit.png"alt=""></a></button>
+					<button class="button"><a href="update.php?productid=<?php echo $row['productid'] ?>" ><img src="img/edit.png"alt=""></a></button>
 		  </form>
 	   </td>
 	<?php
