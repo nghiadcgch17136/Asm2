@@ -8,8 +8,8 @@
     }
     table{
     	position: relative;
-    	top: 100px;
-    	left: 70px;
+    	top: 120px;
+    	left: 400px;
     }
 
 	</style>
