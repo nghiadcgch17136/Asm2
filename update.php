@@ -4,6 +4,7 @@
 	<title>ATN shop</title>
 </head>
 <body>
+	<form action="admin.php" method="GET">
 	<?php
 	if (isset($_GET['productid'])) {
 		$sql = "SELECT * FROM product WHERE productid =".$_GET['productid'];
@@ -52,8 +53,10 @@ $resultSet = $stmt->fetchAll();
 				<td>Quantity:</td>
 				<td><input type="text" name="quantity" value="<?php echo $row['quantity'] ?>"></td>
 			</tr>
+			<tr><td><input type="submit" value="SAVE"></td></tr>
 		</table>
 		}
+		</form>
 	?>
 </body>
 </html>
