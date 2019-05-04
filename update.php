@@ -49,7 +49,7 @@
 		</tr>
 		<tr>
 			<td>Image:</td>
-			<td><input type="text" name="image"></td>
+			<td><input type="text" name="image" value="img/"></td>
 		</tr>
 		<tr><td><input type="submit" value="SAVE"></td></tr>
 
