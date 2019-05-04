@@ -5,7 +5,7 @@
 </head>
 <body>
 	<?php
-		if (isset($_GET['productid'])) {
+		
 		$db = pg_connect("host=ec2-54-221-236-144.compute-1.amazonaws.com port=5432 user=tkxdkzzzureptd
 	 password=597dac569edc9b06099f1027652ff9aab479d2d6c501e71e1c31adc6bd6ed453 dbname=d621ll97foi9ku");
 		$query = "UPDATE product SET productname = '$_GET[productname]',productdescription = '$_GET[productdescription]',price = '$_GET[price]', quantity = '$_GET[quantity]', image = '$_GET[image]' where productid = '$_GET[productid]'";	
@@ -13,7 +13,7 @@
 		$result = pg_query($db,$query);
 		
 
-	}
+	
 		?>
 
 		
