@@ -60,11 +60,11 @@
 	<title>ATN shop</title>
 </head>
 <body>
-	<h1 style="text-align: center; font-size:30px;font-weight: bold;">ATN shop management</h1>
+	
 	<form action="admin.php">
 		<button class="button1" style="width: auto;">Admin</button>
 	</form>
-	
+	<h1 style="text-align: center; font-size:30px;font-weight: bold;">ATN shop management</h1>
 	
 	<div>
 		<?php 
