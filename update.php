@@ -21,8 +21,8 @@
 		<form action="admin.php" method="GET"><table style="margin: auto;">
 		<tr>
 			
-			<td>ProductID: <?php echo $_GET['productid'] ?></td>
-			<td><input type="hidden" name="productid" value="<?php echo $_GET['productid'] ?>"></td>
+			<td>ProductID: <?php echo $_GET['id'] ?></td>
+			<td><input type="hidden" name="productid" value="<?php echo $_GET['id'] ?>"></td>
 		</tr>
 		<tr>
 			<td>Product name:</td>
