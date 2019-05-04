@@ -7,7 +7,9 @@
       
     }
     table{
-    	margin-top: 80px;
+    	position: relative;
+    	top: 100px;
+    	left: 70px;
     }
 
 	</style>
@@ -23,7 +25,7 @@
 
 		
 			
-		<form action="" method="GET"><table style="margin: auto;">
+		<form action="" method="GET"><table>
 		<tr>
 			
 			<td>ProductID: <?php echo $_GET['productid'] ?></td>
