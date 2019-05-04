@@ -51,6 +51,7 @@
 			<input type="text" placeholder="Search.." name="search" >
   			<button type="submit"><i class="fa fa-search"></i></button>
 	</form>
+	<h1 style="font-size:30px; position: relative;top: 15px;left: 790px; font-weight: bold;">ATN shop management</h1>
 	<div>
 		<?php 
 		if (isset($_GET['del'])) {
