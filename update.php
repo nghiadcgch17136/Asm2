@@ -18,10 +18,10 @@
 
 		
 			
-		<form action="admin.php" method="GET"><table style="margin: auto;">
+		<form action="admin.php" method="POST"><table style="margin: auto;">
 		<tr>
-			<td>ProductID: <?php echo '$_GET[productid]' ?></td>
-			<td><input type="hidden" name="productid" value="<?php echo '$_GET[productid]' ?>"></td>
+			<td>ProductID: <?php echo '$_POST[productid]' ?></td>
+			<td><input type="hidden" name="productid" value="<?php echo '$_POST[productid]' ?>"></td>
 		</tr>
 		<tr>
 			<td>Product name:</td>
