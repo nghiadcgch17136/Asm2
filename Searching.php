@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
-		button {
+		.button {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -13,7 +13,7 @@
   width: 100%;
 }
 
-button:hover {
+.button:hover {
   opacity: 0.8;
 }
 		body{
@@ -61,7 +61,7 @@ button:hover {
 </head>
 <body>
 	<form action="admin.php">
-		<button style="width: auto;">Admin</button>
+		<button class="button" style="width: auto;">Admin</button>
 	</form>
 	<form action="Searching.php" class="searchbar" method="GET">
 			<input type="text" placeholder="Search.." name="search" >
