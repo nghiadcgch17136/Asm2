@@ -20,8 +20,9 @@
 			
 		<form action="admin.php" method="POST"><table style="margin: auto;">
 		<tr>
-			<td>ProductID: <?php echo '$_POST[productid]' ?></td>
-			<td><input type="hidden" name="productid" value="<?php echo '$_POST[productid]' ?>"></td>
+			<?$row=pg_fetch_assoc($results)?>
+			<td>ProductID: <?php echo $row['productid'] ?></td>
+			<td><input type="hidden" name="productid" value="<?php echo $row['productid'] ?>"></td>
 		</tr>
 		<tr>
 			<td>Product name:</td>
