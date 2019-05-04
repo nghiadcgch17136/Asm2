@@ -50,6 +50,7 @@
 	<title>ATN shop</title>
 </head>
 <body>
+	
 	<div>
 	<form action="Searching.php" class="searchbar" method="GET">
 			<input type="text" placeholder="Search.." name="search">
