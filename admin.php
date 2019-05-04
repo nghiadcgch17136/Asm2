@@ -59,20 +59,7 @@
 		
 		}
 	 ?>
-	 <?php 
-		if (isset($_GET['productname'])) {
-		$db = pg_connect("host=ec2-54-221-236-144.compute-1.amazonaws.com port=5432 user=tkxdkzzzureptd
-	 password=597dac569edc9b06099f1027652ff9aab479d2d6c501e71e1c31adc6bd6ed453 dbname=d621ll97foi9ku");
-		$ProductName = $_GET['productname'];	
-		$Image = $_GET['image'];
-		$DescribeProducts = $_GET['productdescription'];
-		$Price = $_GET['price'];
-		$Quantity = $_GET['quantity'];
-		$sql = "UPDATE product SET productname='".$ProductName."',productdescription='".$DescribeProducts."',price= '".$Price."',quantity ='".$Quantity."', image='".$Image."' WHERE productid =" .$_GET['productid'];
-		$result = pg_query($db,$sql);
-		
-		}
-	 ?>
+	 
 
 		<?php 
 $sql = "SELECT * FROM product";
@@ -110,7 +97,7 @@ foreach ($resultSet as $row) {
 	?><td><form action="" method="GET">
 					<button class="button" onclick="return Deleteqry(<?php echo $row['productid'] ?>)"><img src="img/rubbish-bin-delete-button.png" alt=""></button>
 		  </form>
-		  <form action="update.php"><button class="button" onclick="return editqry(<?php echo $row['productid'] ?>)"><img src="img/edit.png"alt=""></button></form>
+		  <form action="update.php"><button class="button" onclick="return edit(<?php echo $row['productid'] ?>)"><img src="img/edit.png"alt=""></button></form>
 	   </td>
 	<?php
 	echo "</tr>";
